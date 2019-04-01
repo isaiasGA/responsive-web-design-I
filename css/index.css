@@ -76,12 +76,28 @@ header nav {
   margin-top: 35px;
 }
 
+@media (max-width: 500px) {
+    header nav {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        margin-left: 66px;
+        margin-top: 0;
+    }   
+}
+
 @media(max-width:800px) {
     header {
         display: flex;
         flex-wrap: wrap-reverse;
         justify-content: center;
         margin-left: 52px;
+    }
+}
+
+@media(max-width:500px) {
+    header {
+        margin-left: 0;
     }
 }
 
@@ -99,6 +115,15 @@ header nav a {
         }
 }
 
+@media(max-width:500px) { 
+    header nav a {
+        padding: 20px 147px;
+        border-bottom: 1px solid black;
+        width: 78%;
+    }
+    
+}
+
 header nav a:hover {
   text-decoration: underline;
 }
@@ -114,13 +139,31 @@ header nav a:first-child {
     }   
 }
 
+@media (max-width: 500px) {
+    header nav a:first-child {
+        margin-left:0;
+      }
+}
+
 header nav a:last-child {
   margin-right: 0;
 }
 
+
 header .logo {
   margin-top: 25px;
 }
+
+@media (max-width: 500px) {
+    header .logo {
+        margin-top: 34px;
+        margin-left: 42px;
+      }
+}
+
+
+
+
 
 /* cta */
 
@@ -141,6 +184,13 @@ header .logo {
             margin-left: 158px;
     
         }
+}
+
+@media ( max-width: 500px) {
+    .cta .cta-text {
+        margin-left: 18px;;
+
+    }
 }
 
 .cta .cta-text button {
