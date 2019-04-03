@@ -119,7 +119,7 @@ header nav a {
 @media(max-width:500px) { 
     header nav a {
       padding: 20px 0;
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid;
       width: 100%;
       display: block;
       text-align: center;
@@ -138,15 +138,10 @@ header nav a:first-child {
   margin-left: 0;
 }
 
-@media (max-width: 800px) {
-    header nav a:first-child {
-       margin: 0;
-    }   
-}
 
 @media (max-width: 500px) {
     header nav a:first-child {
-        margin:0;
+      border-top: 1px solid;
       }
 }
 
@@ -160,16 +155,15 @@ header nav a:last-child {
   }
 }
 
-
-header .logo {
-  margin-top: 25px;
+.logo {
+  margin-top: 17px;
 }
 
 @media (max-width: 500px) {
-    header .logo {
-        margin-top: 34px;
-        margin-left: 42px;
-      }
+  header .logo {
+    margin: 25px;
+    }
+    
 }
 
 
@@ -187,22 +181,37 @@ header .logo {
   padding: 0px 75px;
 }
 
+
+@media ( max-width: 800px) {
+  .cta {
+    margin-bottom: 70px;
+    margin-top: 64px;
+}
+}
+
+@media ( max-width: 500px) {
+  .cta {
+    margin-bottom: 35px;
+    margin-top: 0;
+    }
+}
+
+
 @media ( max-width: 800px) {
         .cta .cta-text {
-            display: inline-block; 
-            font-size: 73px;
-            margin-top: 75px;
-            margin-left: 158px;
-    
-        }
+          text-align: center;
+          font-size: 59px;
+          margin-top: 37px;
+          display: block;
+          }
 }
 
 @media ( max-width: 500px) {
     .cta .cta-text {
         display: inline-block; 
         font-size: 73px;
-        margin-top: 75px;
-        margin-left: 18px;;
+       
+ margin-left: 18px;;
 
     }
 }
@@ -262,12 +271,7 @@ header .logo {
 
 .main-content .top-content {
   padding: 0 10px;
-}
-
-@media (max-width: 800px) {
-    .main-content .top-content {
-        display: flex;
-    }
+  display: flex;
 }
 
 @media (max-width: 500px) {
@@ -280,6 +284,14 @@ header .logo {
 .main-content .top-content .text-content:last-child {
   margin-right: 0;
 }
+
+@media (max-width: 800px) {
+  .main-content .top-content .text-content {
+    margin-right: 18px;
+    font-size: 17px;
+} 
+}
+
 
 @media (max-width: 500px) {
         .main-content .top-content .text-content {
